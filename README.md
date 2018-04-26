@@ -1,24 +1,34 @@
+[![Stars](https://img.shields.io/github/stars/BlizD/Tasks.svg?label=Github%20%E2%98%85&a)](https://github.com/BlizD/Tasks/stargazers)
+[![Release](https://img.shields.io/github/tag/BlizD/Tasks.svg?label=Last%20release&a)](https://github.com/BlizD/Tasks/releases)
 [![Открытый чат проекта https://gitter.im/Tasks_/Lobby](https://badges.gitter.im/Tasks_/Lobby.svg)](https://gitter.im/Tasks_/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 # Управление задачами: Канбан доска #
 
 Конфигурация "Управление задачами" с использованием библиотеки стандартных подсистем. Канбан доска
 
 Полное описание смотрим на инфостарт: (http://infostart.ru/public/552480/)
 
+Служба поддержки (ServiceDesk): https://infostart.ru/public/788003/
+
+Почта проекта:  **sdesk1c@bk.ru**
+
 ## Скачать последний релиз ## 
 
-* https://github.com/BlizD/Tasks/releases/download/1.0.3.032/Tasks_1.0.3.032.zip - скачать последний релиз;
+* https://github.com/BlizD/Tasks/releases/download/1.0.4.007/Tasks_1.0.4.007.zip - скачать последний релиз;
 * https://github.com/BlizD/Tasks/releases - все релизы.
 
 ## Статистика использование программы за 8 месяцев ## 
 
 * https://youtu.be/PMvp0UqKybk - Статистика использования в период с Ноября 16 по Июнь 17;
 
-![2](https://user-images.githubusercontent.com/10989306/27944416-68e29a98-62ef-11e7-9cba-2142ba625ba5.png)
+Обновил картинку, статистика за год использования:
 
+![tasksfortheyear1](https://user-images.githubusercontent.com/10989306/32988224-b89f859c-cd10-11e7-8a52-1a9480720824.png)
 
 ## Видео инструкции (очень короткие самое длинное это 8 мин) ##
 
+* https://youtu.be/r6tNabne97s - Общая схема работы службы поддержки (ServiceDesk);
+* https://youtu.be/tqTCGAFS4LQ - Настройка службы поддержки (ServiceDesk);
 * https://youtu.be/kwgkH9lPBVo - канбан доска, перетаскивание карточек, произвольные отборы, видимость колонок;
 * https://youtu.be/XzWCFyrIPcI - как работать с документом "Выпуск релиза";
 * https://youtu.be/mBQWm7G9U18 - как указать WIP лимит; 

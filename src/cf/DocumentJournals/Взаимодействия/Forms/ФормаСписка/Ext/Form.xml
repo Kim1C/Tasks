@@ -1111,6 +1111,20 @@
 											</ToolTip>
 											<ExtendedTooltip name="СтраницаПредметExtendedTooltip" id="447"/>
 											<ChildItems>
+												<ViewStatusAddition name="узПредметыПанельНавигацииСостояниеПросмотра" id="908">
+													<AdditionSource>
+														<Item>ПредметыПанельНавигации</Item>
+														<Type>ViewStatusRepresentation</Type>
+													</AdditionSource>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Уз предметы панель навигации состояние просмотра</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="узПредметыПанельНавигацииСостояниеПросмотраКонтекстноеМеню" id="909"/>
+													<ExtendedTooltip name="узПредметыПанельНавигацииСостояниеПросмотраРасширеннаяПодсказка" id="910"/>
+												</ViewStatusAddition>
 												<Table name="ПредметыПанельНавигации" id="690">
 													<Width>10</Width>
 													<UseAlternationRowColor>true</UseAlternationRowColor>
@@ -1142,6 +1156,11 @@
 													<ContextMenu name="ПредметыПанельНавигацииКонтекстноеМеню" id="691">
 														<Autofill>false</Autofill>
 														<ChildItems>
+															<Button name="ПредметыПанельНавигацииКонтекстноеМенюКнопкаПоискПоТекущемуЗначению" id="920">
+																<Type>CommandBarButton</Type>
+																<CommandName>Form.Item.ПредметыПанельНавигации.StandardCommand.FindByCurrentValue</CommandName>
+																<ExtendedTooltip name="ПредметыПанельНавигацииКонтекстноеМенюКнопкаПоискПоТекущемуЗначениюРасширеннаяПодсказка" id="921"/>
+															</Button>
 															<Button name="ПредметыПанельНавигацииКонтекстноеМенюРассмотрено" id="715">
 																<Type>CommandBarButton</Type>
 																<CommandName>Form.Command.Рассмотрено</CommandName>
@@ -1238,9 +1257,7 @@
 															</Button>
 														</ChildItems>
 													</ContextMenu>
-													<AutoCommandBar name="ПредметыПанельНавигацииКоманднаяПанель" id="692">
-														<Autofill>false</Autofill>
-													</AutoCommandBar>
+													<AutoCommandBar name="ПредметыПанельНавигацииКоманднаяПанель" id="692"/>
 													<ExtendedTooltip name="ПредметыПанельНавигацииРасширеннаяПодсказка" id="693"/>
 													<SearchStringAddition name="ПредметыПанельНавигацииСтрокаПоиска" id="843">
 														<AdditionSource>
@@ -1288,8 +1305,26 @@
 																	<v8:content>Предметы панель навигации группа</v8:content>
 																</v8:item>
 															</ToolTip>
+															<Group>Horizontal</Group>
 															<ExtendedTooltip name="ПредметыПанельНавигацииГруппаРасширеннаяПодсказка" id="809"/>
 															<ChildItems>
+																<LabelField name="ПредметыПанельНавигацииПредметКод" id="922">
+																	<DataPath>ПредметыПанельНавигации.Предмет.Code</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Номер задачи</v8:content>
+																		</v8:item>
+																	</Title>
+																	<Format>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>ЧГ=0</v8:content>
+																		</v8:item>
+																	</Format>
+																	<ContextMenu name="ПредметыПанельНавигацииПредметКодКонтекстноеМеню" id="923"/>
+																	<ExtendedTooltip name="ПредметыПанельНавигацииПредметКодРасширеннаяПодсказка" id="924"/>
+																</LabelField>
 																<LabelField name="Предмет" id="697">
 																	<DataPath>ПредметыПанельНавигации.Предмет</DataPath>
 																	<ReadOnly>true</ReadOnly>
@@ -1354,6 +1389,26 @@
 																		</LabelField>
 																	</ChildItems>
 																</ColumnGroup>
+																<LabelField name="ПредметыПанельНавигацииПредметКонтрагент" id="925">
+																	<DataPath>ПредметыПанельНавигации.Предмет.Контрагент</DataPath>
+																	<ContextMenu name="ПредметыПанельНавигацииПредметКонтрагентКонтекстноеМеню" id="926"/>
+																	<ExtendedTooltip name="ПредметыПанельНавигацииПредметКонтрагентРасширеннаяПодсказка" id="927"/>
+																</LabelField>
+																<LabelField name="ПредметыПанельНавигацииИсполнитель" id="917">
+																	<DataPath>ПредметыПанельНавигации.Исполнитель</DataPath>
+																	<ContextMenu name="ПредметыПанельНавигацииИсполнительКонтекстноеМеню" id="918"/>
+																	<ExtendedTooltip name="ПредметыПанельНавигацииИсполнительРасширеннаяПодсказка" id="919"/>
+																</LabelField>
+																<LabelField name="ПредметыПанельНавигацииСтатус" id="911">
+																	<DataPath>ПредметыПанельНавигации.Статус</DataPath>
+																	<ContextMenu name="ПредметыПанельНавигацииСтатусКонтекстноеМеню" id="912"/>
+																	<ExtendedTooltip name="ПредметыПанельНавигацииСтатусРасширеннаяПодсказка" id="913"/>
+																</LabelField>
+																<LabelField name="ПредметыПанельНавигацииОсновнаяЗадача" id="914">
+																	<DataPath>ПредметыПанельНавигации.ОсновнаяЗадача</DataPath>
+																	<ContextMenu name="ПредметыПанельНавигацииОсновнаяЗадачаКонтекстноеМеню" id="915"/>
+																	<ExtendedTooltip name="ПредметыПанельНавигацииОсновнаяЗадачаРасширеннаяПодсказка" id="916"/>
+																</LabelField>
 															</ChildItems>
 														</ColumnGroup>
 													</ChildItems>
@@ -2322,6 +2377,7 @@
 													<v8:content>Группа флаги</v8:content>
 												</v8:item>
 											</ToolTip>
+											<Group>Horizontal</Group>
 											<ExtendedTooltip name="ГруппаФлагиРасширеннаяПодсказка" id="773"/>
 											<ChildItems>
 												<PictureField name="НомерКартинки" id="330">
@@ -2340,23 +2396,6 @@
 													</ValuesPicture>
 													<ContextMenu name="НомерКартинкиКонтекстноеМеню" id="331"/>
 													<ExtendedTooltip name="НомерКартинкиExtendedTooltip" id="587"/>
-												</PictureField>
-												<PictureField name="ВажностьНомерКартинки" id="340">
-													<DataPath>Список.ВажностьНомерКартинки</DataPath>
-													<TitleLocation>None</TitleLocation>
-													<HeaderPicture>
-														<xr:Ref>CommonPicture.ВосклицательныйЗнакСерый</xr:Ref>
-														<xr:LoadTransparent>false</xr:LoadTransparent>
-													</HeaderPicture>
-													<ShowInFooter>false</ShowInFooter>
-													<Width>2</Width>
-													<HorizontalStretch>false</HorizontalStretch>
-													<ValuesPicture>
-														<xr:Ref>CommonPicture.КоллекцияВариантыВажности</xr:Ref>
-														<xr:LoadTransparent>false</xr:LoadTransparent>
-													</ValuesPicture>
-													<ContextMenu name="ВажностьНомерКартинкиКонтекстноеМеню" id="341"/>
-													<ExtendedTooltip name="ВажностьНомерКартинкиExtendedTooltip" id="585"/>
 												</PictureField>
 											</ChildItems>
 										</ColumnGroup>
@@ -2442,15 +2481,32 @@
 															<ContextMenu name="ЕстьВложенияКонтекстноеМеню" id="109"/>
 															<ExtendedTooltip name="ЕстьВложенияExtendedTooltip" id="586"/>
 														</PictureField>
+														<LabelField name="Тема" id="12">
+															<DataPath>Список.Тема</DataPath>
+															<Width>20</Width>
+															<HorizontalStretch>false</HorizontalStretch>
+															<ContextMenu name="ТемаКонтекстноеМеню" id="13"/>
+															<ExtendedTooltip name="ТемаExtendedTooltip" id="590"/>
+														</LabelField>
+														<PictureField name="ВажностьНомерКартинки" id="340">
+															<DataPath>Список.ВажностьНомерКартинки</DataPath>
+															<TitleLocation>None</TitleLocation>
+															<HeaderPicture>
+																<xr:Ref>CommonPicture.ВосклицательныйЗнакСерый</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</HeaderPicture>
+															<ShowInFooter>false</ShowInFooter>
+															<Width>2</Width>
+															<HorizontalStretch>false</HorizontalStretch>
+															<ValuesPicture>
+																<xr:Ref>CommonPicture.КоллекцияВариантыВажности</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</ValuesPicture>
+															<ContextMenu name="ВажностьНомерКартинкиКонтекстноеМеню" id="341"/>
+															<ExtendedTooltip name="ВажностьНомерКартинкиExtendedTooltip" id="585"/>
+														</PictureField>
 													</ChildItems>
 												</ColumnGroup>
-												<LabelField name="Тема" id="12">
-													<DataPath>Список.Тема</DataPath>
-													<Width>20</Width>
-													<HorizontalStretch>false</HorizontalStretch>
-													<ContextMenu name="ТемаКонтекстноеМеню" id="13"/>
-													<ExtendedTooltip name="ТемаExtendedTooltip" id="590"/>
-												</LabelField>
 											</ChildItems>
 										</ColumnGroup>
 										<LabelField name="Размер" id="779">
@@ -3557,6 +3613,11 @@
 				<DynamicDataRead>true</DynamicDataRead>
 				<QueryText>ВЫБРАТЬ Различные
 	СостоянияПредметовВзаимодействий.Предмет КАК Предмет,
+	//+ #286 Иванов А.Б. 2017-12-11
+	ВЫРАЗИТЬ (ЕСТЬNULL(СостоянияПредметовВзаимодействий.Предмет, ЗНАЧЕНИЕ(Справочник.узЗадачи.ПустаяСсылка)) КАК Справочник.узЗадачи).Исполнитель КАК Исполнитель,
+	ВЫРАЗИТЬ (ЕСТЬNULL(СостоянияПредметовВзаимодействий.Предмет, ЗНАЧЕНИЕ(Справочник.узЗадачи.ПустаяСсылка)) КАК Справочник.узЗадачи).ОсновнаяЗадача КАК ОсновнаяЗадача,
+	ВЫРАЗИТЬ (ЕСТЬNULL(СостоянияПредметовВзаимодействий.Предмет, ЗНАЧЕНИЕ(Справочник.узЗадачи.ПустаяСсылка)) КАК Справочник.узЗадачи).Статус КАК Статус,
+	//- #286 Иванов А.Б. 2017-12-11	
 	СостоянияПредметовВзаимодействий.КоличествоНеРассмотрено КАК КоличествоНеРассмотрено,
 	СостоянияПредметовВзаимодействий.Активен,
 	СостоянияПредметовВзаимодействий.ДатаПоследнегоВзаимодействия КАК ДатаПоследнегоВзаимодействия,
@@ -3614,6 +3675,24 @@
 							<dcsset:right xmlns:d8p1="http://v8.1c.ru/8.2/data/types" xsi:type="v8:Type">d8p1:Undefined</dcsset:right>
 							<dcsset:viewMode>Normal</dcsset:viewMode>
 							<dcsset:userSettingID>23577b33-7493-4682-a79c-5e9334cba679</dcsset:userSettingID>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:left xsi:type="dcscor:Field">Исполнитель</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:userSettingID>b4b93ddc-4bd0-4e53-b745-585b4abd56de</dcsset:userSettingID>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:left xsi:type="dcscor:Field">Статус</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:userSettingID>bc67a856-4d8e-4065-82d1-16e322d0dd51</dcsset:userSettingID>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:left xsi:type="dcscor:Field">Статус.ВидСтатуса</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:userSettingID>3683f8df-435b-4b57-beae-148f17e94dc3</dcsset:userSettingID>
 						</dcsset:item>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
 					</dcsset:filter>
